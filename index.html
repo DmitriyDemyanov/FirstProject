@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="header navbar navbar-dark bg-primary">
+    <a class="navbar-brand">Navbar</a>
+    <form class="form-inline">
+      <select class="form-control form-control-sm" id="themeSelect">
+        <option value="default">Theme Default</option>
+        <option value="light">Theme Light</option>
+        <option value="dark">Theme Dark</option>
+      </select>
+    </form>
+  </nav>
+
+  <div class="container display-flex">
+
+    <div class="row">
+
+      <ul id="users-name-list" class="list-group col-6"></ul>
+
+      <div id="user-info" class="col-6"></div>
+
+    </div>
+
+  </div>
+
+
+  <div class="form-section mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col col-8 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Add new task</h5>
+              <form name="addTask">
+                <input type="text" name="title" id="title" class="form-control" placeholder="Task title" />
+                <input type="text" name="body" id="body" class="form-control mt-3" placeholder="Task body" />
+                <button type="submit" class="btn btn-primary mt-4">
+                  Add task
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tasks-list-section mt-5">
+    <div class="container">
+      <ul class="list-group"></ul>
+    </div>
+  </div>
+
+  <div class="container table_box">
+    <table class="table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <button class="button-bottom">get AsJAX</button>
+    <div class="container-bottom"></div>
+  </div>
+
+  <div class="container">
+    <form name="addPost">
+
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input
+          name="name"
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Email</label>
+        <input
+          name="email"
+          type="email"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput">Phone</label>
+        <input
+          name="phone"
+          type="tel"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="phone"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput">Website</label>
+        <input
+          name="website"
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="website"
+          required
+        >
+      </div>
+
+      <input name="submit" type="submit" class="btn btn-primary" id="type-submit">
+
+    </form>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Featured
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+
+
+  <script src="app.js"></script>
+  <script src="users.js"></script>
+  <script src="post.js"></script>
+  <!-- <script src="index.js"></script> -->
+
+</body>
+
+</html>
